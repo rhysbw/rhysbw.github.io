@@ -1,0 +1,160 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Define general styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  height: 100vh;
+  background-color: black;
+  align-items: flex-start; 
+  border: #fff;
+  background-origin: padding-box;
+  /* Align the left panel and tabs at the top */
+}
+
+
+.left-panel {
+  max-width: 25%;
+  min-width: max-content;
+  width: 25%;
+  flex-grow: 1;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+  border-radius: 10px;
+  height: 90%;
+  margin: 20px; /* Adjust margin-left to move it to the right */
+}
+
+.left-panel img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.left-panel h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.left-panel .social-links {
+  margin-top: 20px;
+}
+
+.left-panel .social-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.left-panel .social-links a:hover {
+  color: #00bcd4;
+}
+
+.main-panel {
+  flex: 1;
+  height: 100vh;
+  min-width: min-content;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+.tab-button {
+  display: block;
+  width: 175px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #333;
+  border: 20px;
+  color: #fff;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: rgb(117, 111, 111);
+}
+
+
+/* Style for individual sections */
+section {
+  display: none;
+  padding: 20px;
+  border: 1px solid #333; /* Add a border to each section */
+  border-top: none; /* Remove top border for the first section */
+}
+
+/* Display the active section */
+section.active {
+  display: block;
+  background-color: rgb(117, 111, 111); /* Change this color to match your desired section background color */
+  overflow-y: auto; /* Add scrollbar for content if needed */
+  padding-bottom: 20px;
+  border-radius: 10px;
+  height: 90%;
+}
+.content-box {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  font-size: 16px;
+}
