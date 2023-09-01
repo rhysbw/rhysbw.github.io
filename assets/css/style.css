@@ -158,3 +158,30 @@ section.active {
 .content-box p {
   font-size: 16px;
 }
+#terminal {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #111;
+  border: 1px solid lime;
+  border-radius: 5px;
+}
+
+#output {
+  white-space: pre-wrap;
+  color: greenyellow;
+}
+
+#input {
+  background-color: black;
+  color: lime;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: monospace;
+  font-size: 16px;
+}
+.blue {
+  color: blue;
+}

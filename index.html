@@ -16,7 +16,7 @@
                 <button class="tab-button" onclick="showSection('experience', this)">Work Experience</button>
                 <button class="tab-button" onclick="showSection('education', this)">Education</button>
                 <button class="tab-button" onclick="showSection('skills', this)">Skills</button>
-
+                <button class="tab-button" onclick="showSection('terminal', this)">Terminal</button>
             </div>
           </div>
         
@@ -145,6 +145,13 @@
                     <h3>Project Management</h3>
                     <p>Proficient in using Jira for tracking and managing project tickets.</p>
                 </div>
+            </section>
+            <section class="terminal">
+                <div id="terminal">
+                    <pre id="output">Welcome to My Terminal!<br>Type 'help' to get started.</pre>
+                    <input id="input" type="text" autofocus>
+                </div>
+                <script src="assets/js/terminal.js"></script>
             </section>
           </div>
     </div>
